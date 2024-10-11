@@ -1,0 +1,391 @@
+@font-face {
+    font-family: PoppinsReg;
+    src: url(Assets/Fonts/Poppins/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsSB;
+    src: url(Assets/Fonts/Poppins/poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: PoppinsB;
+    src: url(Assets/Fonts/Poppins/poppins/Poppins-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PoppinsReg;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* HEADER */
+
+#navbar {
+    padding: 15px 20px;
+    box-shadow: 0px 8px 6.5px #cacaca;
+    background-color: #ffffff;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .brandLogo {
+        width: 79px;
+    }
+    
+    .brandName {
+        all: unset;
+        font-family: PoppinsB;
+        font-weight: 900;
+        font-size: 40px;
+        color: #1e1e1e;
+    }
+}
+
+
+.navList {
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+
+    li a {
+        text-decoration: none;
+        font-family: PoppinsReg;
+        color: #9a9a9a;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+.authButtons {
+    display: flex;
+    gap: 34px;
+
+    .signIn {
+        all: unset;
+        text-align: center;
+        text-justify: center;
+    }
+    
+    .signUp {
+        text-align: center;
+        text-justify: center;
+    }
+}
+
+.fa-grip-vertical {
+    font-size: 25px;
+}
+
+.fa-arrow-up-long {
+    transform: rotate(45deg);
+    font-size: 12px;
+}
+/* MAIN */
+
+main {
+    padding: 30px 60px;
+    background-color: #f6f5f5;
+}
+
+.pageInfo {
+    display: flex;
+    flex-direction: column;
+
+    .pagePath {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 10px;
+    
+        a,p,i{
+            font-size: 10px;
+        }
+    
+        a,p{
+            font-weight: 500;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #0000ff;
+        }
+    
+        p {
+            margin-bottom: 0;
+        }
+    }
+    
+    .pageTitle p {
+        font-family: PoppinsSB;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+}
+
+.IPOs {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 35px;
+    flex-wrap: wrap;
+
+    .ipoCard {
+        display: flex;
+        flex-direction: column;
+        width: 442px;
+        background-color: #ffffff;
+        padding: 35px;
+        gap: 35px;
+
+        .company {
+            display: flex;
+            align-items: center;
+            align-items: center;
+            height: 86px;
+            gap: 35px;
+
+            .companyLogo {
+                width: 86px;
+            }
+            
+            .companyName {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 0;
+                color: #414BEA;
+            }
+        }
+
+        .ipoInfo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+        
+            .item {
+                font-size: 18px;
+                font-weight: 500;
+                color: #5A5858;
+            }
+        
+            .data {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .rhpButtons {
+            display: flex;
+            gap: 10px;
+
+            #rhpButton {
+                border: 1px solid #414BEA;
+                color: #414BEA;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            
+            #drhpButton {
+                background-color: #F05537;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.faqsConatiner {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .faqInfo p {
+        margin-bottom: 0;
+    
+        &:nth-child(1) {
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .faqCard {
+        padding: 35px;
+        background-color: #ffffff;
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            transition: gap 500ms ease;
+
+            .faqToggle {
+                all: unset;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .question {
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+
+            .answer {
+                margin-bottom: 0;
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: max-height 0.5s ease, opacity 0.5s ease;
+            }
+
+            .answer.show {
+                max-height: 500px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 250px 20px 250px;
+    gap: 35px;
+}
+
+.footerLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .category {
+
+        p {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: #2D3A4C;
+        }
+    
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+    
+            li {
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0.06em;
+    
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: #667384;
+                }
+            }
+        }
+    }
+}
+
+.footerInfo {
+    margin-top: 99px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        .socialLinks {
+            display: flex;
+            gap: 10px;
+            
+            i {
+                font-size: 21px;
+                color: #0078FF;
+
+                &:hover {
+                    color: #0069e1;
+                }
+            }
+        }
+
+        .companyDetails {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .companyIdentity {
+                display: flex;
+                gap: 18px;
+                align-items: center;
+
+                .BSFLogo {
+                    width: 45px;
+                }
+
+                p {
+                    font-family: PoppinsB;
+                    font-size: 24px;
+                    font-weight: 800;
+                    margin-bottom: 0;
+                }
+            }
+
+            .companyInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                div p {
+                    margin-bottom: 0;
+                    font-size: 13px;
+                    color: #667384;
+                }
+            }
+        }
+
+        .startupindia img {
+            width: 200px;
+        }
+    }
+
+    .disclaimers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
+            color: #667384;
+        }
+    }
+}

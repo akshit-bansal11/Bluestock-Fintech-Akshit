@@ -3,25 +3,828 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming IPO</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="upcomingIPO.css">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <!-- Font Awesome -->
-    <title>Upcoming IPO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header>
-        
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="brand" href="#">
+                    <img class="brandLogo" src="Assets/Images/dp.jpg" alt="Bluestock Logo">
+                    <p class="brandName">BLUETOCK</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-grip-vertical"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navList navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMMUNITY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">
+                                SUPPORT 
+                                <sup>
+                                    <i class="fa-solid fa-arrow-up-long"></i>
+                                </sup>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="authButtons d-flex">
+                        <button class="signIn" type="submit">Sign In</button>
+                        <button class="logIn btn btn-primary" type="submit">Sign Up Now</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        
+        <div class="pageInfo">
+            <div class="pagePath">
+                <a href="">Bluestock</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="">IPO</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <p>UPCOMING IPOs</p>
+            </div>
+            <div class="pageTitle">
+                <p>Upcoming IPO</p>
+            </div>
+            <div class="pageInfo">
+                <p>Companies that have filled for an IPO with SEBI. Few details might be disclosed by the companies later.</p>
+            </div>
+        </div>
+        <div class="IPOs">
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <!-- <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div>
+            <div class="ipoCard">
+                <div class="company">
+                    <div>
+                        <img class="companyLogo" src="Assets/Images/nova.png" alt="Nova Agriculture Ltd.">
+                    </div>
+                    <div>
+                        <p class="companyName">Nova Agriculture Ltd.</p>
+                    </div>
+                </div>
+                <div class="ipoInfo">
+                    <div>
+                        <div class="item">PRICE BAND</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">OPEN</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">CLOSE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE SIZE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">ISSUE TYPE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                    <div>
+                        <div class="item">LISTING DATE</div>
+                        <div class="data">Not Issued</div>
+                    </div>
+                </div>
+                <div class="rhpButtons">
+                    <button id="rhpButton" class="btn">RHP</button>
+                    <button id="drhpButton" class="btn">DRHP</button>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="faqsConatiner">
+            <div class="faqInfo">
+                <p>Frequently Asked Questions?</p>
+                <p>Find answers to common questions that come in your mind related to IPO.</p>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How to Subscribe to an IPO?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">Should I buy an IPO first day?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How do you know if an IPO is good?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How to check IPO start date?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">What is issue size?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How many shares in a lot?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How is the lot size calculated?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">Who decides the IPO price band?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">What is IPO GMP?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faqCard">
+                <div class="faq">
+                    <button class="faqToggle">
+                        <span class="question">How many lots should I apply for IPO?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer>
-        
+        <div class="footerLinks">
+            <div class="category">
+                <p>Resources</p>
+                <ul>
+                    <li><a href="">Trading View</a></li>
+                    <li><a href="">NSE Holidays</a></li>
+                    <li><a href="">e-Voting CDSL</a></li>
+                    <li><a href="">e-Voting NSDL</a></li>
+                    <li><a href="">Market Timings</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <p>Company</p>
+                <ul>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <p>Offerings</p>
+                <ul>
+                    <li><a href="">Compare Broker</a></li>
+                    <li><a href="">Fin Calculators</a></li>
+                    <li><a href="">IPO</a></li>
+                    <li><a href="">All Brokers</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <p>Links</p>
+                <ul>
+                    <li><a href="">Shark Investor</a></li>
+                    <li><a href="">Mutual Funds</a></li>
+                    <li><a href="">Sitemap</a></li>
+                    <li><a href="">Indian Indices</a></li>
+                    <li><a href="">Bug Bounty Program</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <p>Policy</p>
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href="">Trust & Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerInfo">
+            <div class="left">
+                <div class="socialLinks">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="companyDetails">
+                    <div class="companyIdentity">
+                        <img class="BSFLogo" src="Assets/Images/dp.jpg" alt="">
+                        <p>BLUESTOCK</p>
+                    </div>
+                    <div class="companyInfo">
+                        <div>
+                            <p>Bluestock Fintech</p>
+                            <p>Pune, Maharashtra</p>
+                        </div>
+                        <div>
+                            <p>MSME Registration No:</p>
+                            <p>UDYAM-MH-01-v0138001</p>
+                        </div>
+                    </div>
+                    <div class="startupindia">
+                        <img src="Assets/Images/startupindia.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="disclaimers">
+                <p>Investment in securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI. Issued in the interest of the investors.</p>
+                <p>The users can write to hello@bluestock.in for any app, website related queries. Also you can send IT / Tech related feedback to cto@bluestock.in</p>
+                <p>Disclaimer: We are not a SEBI registered research analyst company. We do not provide any kind of stock recommendations, buy/sell stock tips, or investment and trading advice. All the stock scripts shown in the Bluestock app, website, all social media handles are for educational purposes only.
+                    Before making any investment in the financial market, it is advisable to consult with your financial advisor. Remember that stock markets are subject to market risks.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="upcomingIPO.js"></script>
 </body>
 </html>
